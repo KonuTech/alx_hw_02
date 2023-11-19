@@ -1,0 +1,32 @@
+python -m venv venv
+source venv/Scripts/activate
+pipe install pipenv
+pipenv shell
+# pipenv lock
+
+ls -lah
+# pip install notebook
+# jupyter notebook
+
+git remote add upstream https://github.com/DataTalksClub/machine-learning-zoomcamp 
+git remote -v
+git fetch upstream
+git checkout master
+git merge upstream/master
+git commit -m "updated from upstream repo"
+git push origin master
+git status
+git add .
+
+
+coverage run -m pytest ./scripts/addition.py
+coverage report -m
+
+python -m unittest ./tests/test_shapes.py
+
+
+
+black ./scripts/figure.py
+isort ./scripts/figure.py
+mypy ./scripts/figure.py
+flake8 ./scripts/figure.py
