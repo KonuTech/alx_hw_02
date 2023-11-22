@@ -21,6 +21,11 @@ git add .
 
 coverage run -m pytest ./scripts/addition.py
 coverage report -m
+coverage run -m pytest ./scripts/palindrome.py
+coverage report -m
+coverage run -m pytest ./scripts/triangle.py
+coverage report -m
+
 
 python -m unittest ./tests/test_shapes.py
 
