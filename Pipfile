@@ -10,6 +10,7 @@ mypy = "*"
 flake8 = "*"
 pytest = "*"
 coverage = "*"
+django = "*"
 
 [dev-packages]
 
