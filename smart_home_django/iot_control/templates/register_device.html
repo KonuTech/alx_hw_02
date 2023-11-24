@@ -1,0 +1,7 @@
+<!-- register_device.html -->
+<form action="{% url 'register_device' %}" method="post">
+    {% csrf_token %}
+    Device ID: <input type="text" name="device_id"><br>
+    Device Type: <input type="text" name="device_type"><br>
+    <input type="submit" value="Register Device">
+</form>

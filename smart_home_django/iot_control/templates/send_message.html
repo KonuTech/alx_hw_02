@@ -1,0 +1,7 @@
+<!-- send_message.html -->
+<form action="{% url 'send_message' device_id %}" method="post">
+    {% csrf_token %}
+    Message Type: <input type="text" name="message_type"><br>
+    Data: <input type="text" name="data"><br>
+    <input type="submit" value="Send Message">
+</form>
