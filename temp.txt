@@ -35,3 +35,8 @@ black ./scripts/figure.py
 isort ./scripts/figure.py
 mypy ./scripts/figure.py
 flake8 ./scripts/figure.py
+
+
+cd smart_home_django
+python manage.py runserver
+http://127.0.0.1:8000/iot/register/
